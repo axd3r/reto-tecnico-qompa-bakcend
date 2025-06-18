@@ -7,8 +7,10 @@ import { UpdatePurchaseReceiptStatusUseCase } from 'src/application/use-cases/up
 import { ListPurchaseReceiptsUseCase } from 'src/application/use-cases/list-purchase-receipts.use-case';
 import { ExportPurchaseReceiptsUseCase } from 'src/application/use-cases/export-purchase-receipts.use-case';
 import { AskAIUseCase } from 'src/application/use-cases/ask-ai.use-case';
+import { InfrastructureModule } from 'src/infrastructure/infrastructure.module';
 
 @Module({
+  imports: [InfrastructureModule],
   controllers: [PurchaseReceiptController],
   providers: [
     CreatePurchaseReceiptUseCase,

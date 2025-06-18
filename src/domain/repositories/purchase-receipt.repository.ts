@@ -14,5 +14,5 @@ export abstract class PurchaseReceiptRepository {
     totalPages: number;
   }>;
   abstract findMany(filter: FilterPurchaseReceiptDto): Promise<PurchaseReceipt[]>;
-
+  abstract existsByInvoiceAndRuc(invoiceNumber: string, supplierRuc: string): Promise<boolean>;
 }

@@ -154,4 +154,15 @@ export class PrismaPurchaseReceiptRepository extends PurchaseReceiptRepository {
       )
     );
   }
+
+  async existsByInvoiceAndRuc(invoiceNumber: string, supplierRuc: string): Promise<boolean> {
+    const existing = await this.prisma.purchaseReceipt.findFirst({
+      where: {
+        invoiceNumber,
+        supplierRuc,
+      },
+    });
+    return !!existing;
+  }
+
 }
