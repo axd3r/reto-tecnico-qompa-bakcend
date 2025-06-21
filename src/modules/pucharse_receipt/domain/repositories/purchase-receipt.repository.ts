@@ -1,4 +1,4 @@
-import { FilterPurchaseReceiptDto } from "src/application/dto/filter-purchase-receipt.dto";
+import { FilterPurchaseReceiptDto } from "../../application/dto/filter-purchase-receipt.dto";
 import { PurchaseReceipt } from "../entities/purchase-receipt.entity";
 
 export abstract class PurchaseReceiptRepository {

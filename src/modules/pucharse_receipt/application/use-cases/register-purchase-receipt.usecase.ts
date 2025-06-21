@@ -1,5 +1,5 @@
-import { PurchaseReceipt } from 'src/domain/entities/purchase-receipt.entity';
-import { PurchaseReceiptRepository } from 'src/domain/repositories/purchase-receipt.repository';
+import { PurchaseReceipt } from '../../domain/entities/purchase-receipt.entity';
+import { PurchaseReceiptRepository } from '../../domain/repositories/purchase-receipt.repository';
 import { Injectable } from '@nestjs/common';
 import { randomUUID } from 'crypto';
 

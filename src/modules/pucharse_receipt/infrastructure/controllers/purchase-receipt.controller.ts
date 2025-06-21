@@ -1,15 +1,15 @@
 import { Body, Controller, Get, Param, Patch, Post, Query, Res } from '@nestjs/common';
-import { CreatePurchaseReceiptDto } from 'src/application/dto/create-purchase-receipt.dto';
-import { FilterPurchaseReceiptDto } from 'src/application/dto/filter-purchase-receipt.dto';
-import { UpdatePurchaseReceiptStatusDto } from 'src/application/dto/update-purchase-receipt-status.dto';
-import { CreatePurchaseReceiptUseCase } from 'src/application/use-cases/create-purchase-receipt.use-case';
-import { ExportPurchaseReceiptsUseCase } from 'src/application/use-cases/export-purchase-receipts.use-case';
-import { ListPurchaseReceiptsUseCase } from 'src/application/use-cases/list-purchase-receipts.use-case';
-import { UpdatePurchaseReceiptStatusUseCase } from 'src/application/use-cases/update-purchase-receipt-status.use-case';
-import { PurchaseReceipt } from 'src/domain/entities/purchase-receipt.entity';
+import { CreatePurchaseReceiptDto } from 'src/modules/pucharse_receipt/application/dto/create-purchase-receipt.dto';
+import { FilterPurchaseReceiptDto } from 'src/modules/pucharse_receipt/application/dto/filter-purchase-receipt.dto';
+import { UpdatePurchaseReceiptStatusDto } from 'src/modules/pucharse_receipt/application/dto/update-purchase-receipt-status.dto';
+import { CreatePurchaseReceiptUseCase } from 'src/modules/pucharse_receipt/application/use-cases/create-purchase-receipt.use-case';
+import { ExportPurchaseReceiptsUseCase } from 'src/modules/pucharse_receipt/application/use-cases/export-purchase-receipts.use-case';
+import { ListPurchaseReceiptsUseCase } from 'src/modules/pucharse_receipt/application/use-cases/list-purchase-receipts.use-case';
+import { UpdatePurchaseReceiptStatusUseCase } from 'src/modules/pucharse_receipt/application/use-cases/update-purchase-receipt-status.use-case';
+import { PurchaseReceipt } from 'src/modules/pucharse_receipt/domain/entities/purchase-receipt.entity';
 import { Response } from 'express';
-import { AskAIUseCase } from 'src/application/use-cases/ask-ai.use-case';
-import { AskAIDto } from 'src/application/dto/ask-ai.dto';
+import { AskAIUseCase } from 'src/modules/pucharse_receipt/application/use-cases/ask-ai.use-case';
+import { AskAIDto } from 'src/modules/pucharse_receipt/application/dto/ask-ai.dto';
 
 @Controller('purchase-receipts')
 export class PurchaseReceiptController {

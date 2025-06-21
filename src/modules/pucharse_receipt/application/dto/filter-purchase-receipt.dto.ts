@@ -1,6 +1,6 @@
 import { IsOptional, IsEnum, IsDateString, IsInt, Min } from 'class-validator';
 import { Type } from 'class-transformer';
-import { PurchaseReceiptStatus, DocumentType } from 'src/domain/entities/purchase-receipt.entity';
+import { DocumentType, PurchaseReceiptStatus } from '../../domain/entities/purchase-receipt.entity';
 
 export class FilterPurchaseReceiptDto {
   @IsOptional()

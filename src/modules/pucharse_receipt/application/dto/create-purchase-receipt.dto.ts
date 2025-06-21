@@ -1,5 +1,5 @@
 import { IsString, IsNumber, IsDateString, IsEnum, IsOptional } from 'class-validator';
-import { DocumentType } from 'src/domain/entities/purchase-receipt.entity';
+import { DocumentType } from '../../domain/entities/purchase-receipt.entity';
 
 export class CreatePurchaseReceiptDto {
   @IsString()

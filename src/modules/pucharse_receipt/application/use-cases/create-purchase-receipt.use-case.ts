@@ -1,9 +1,9 @@
 import { BadRequestException, Injectable, Inject } from '@nestjs/common';
-import { PurchaseReceiptRepository } from 'src/domain/repositories/purchase-receipt.repository';
+import { PurchaseReceiptRepository } from '../../domain/repositories/purchase-receipt.repository';
 import { CreatePurchaseReceiptDto } from '../dto/create-purchase-receipt.dto';
-import { PurchaseReceipt } from 'src/domain/entities/purchase-receipt.entity';
+import { PurchaseReceipt } from '../../domain/entities/purchase-receipt.entity';
 import { randomUUID } from 'crypto';
-import { SunatService } from 'src/infrastructure/services/sunat.service';
+import { SunatService } from 'src/modules/sunat/sunat.service';
 
 @Injectable()
 export class CreatePurchaseReceiptUseCase {

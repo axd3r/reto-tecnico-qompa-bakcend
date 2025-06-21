@@ -1,5 +1,5 @@
 import { Injectable, Inject, NotFoundException } from '@nestjs/common';
-import { PurchaseReceiptRepository } from 'src/domain/repositories/purchase-receipt.repository';
+import { PurchaseReceiptRepository } from '../../domain/repositories/purchase-receipt.repository';
 import { UpdatePurchaseReceiptStatusDto } from '../dto/update-purchase-receipt-status.dto';
 
 @Injectable()

@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/infrastructure/prisma/prisma.service';
+import { PrismaService } from '../../infrastructure/prisma/prisma.service';
 import { PurchaseReceiptRepository } from './purchase-receipt.repository';
-import { PurchaseReceipt, DocumentType, PurchaseReceiptStatus } from 'src/domain/entities/purchase-receipt.entity';
+import { PurchaseReceipt, DocumentType, PurchaseReceiptStatus } from '../../domain/entities/purchase-receipt.entity';
 import { Prisma } from 'generated/prisma';
-import { FilterPurchaseReceiptDto } from 'src/application/dto/filter-purchase-receipt.dto';
+import { FilterPurchaseReceiptDto } from '../../application/dto/filter-purchase-receipt.dto';
 
 
 @Injectable()

@@ -1,5 +1,5 @@
 import { HttpModule } from '@nestjs/axios';
-import { SunatService } from './services/sunat.service';
+import { SunatService } from 'src/modules/sunat/sunat.service';
 import { Module } from '@nestjs/common';
 
 @Module({

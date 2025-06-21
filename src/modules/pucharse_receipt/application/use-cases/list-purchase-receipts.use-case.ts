@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { PurchaseReceiptRepository } from 'src/domain/repositories/purchase-receipt.repository';
+import { PurchaseReceiptRepository } from '../../domain/repositories/purchase-receipt.repository';
 import { FilterPurchaseReceiptDto } from '../dto/filter-purchase-receipt.dto';
 
 @Injectable()
